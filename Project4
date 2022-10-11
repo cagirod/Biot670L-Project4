@@ -77,15 +77,6 @@ docker run -t --rm -u $(id -u):$(id -g) -v $(pwd):/data:rw staphb/trimmomatic tr
 mkdir -pv ${READS}/trimmomatic0.39/
 mv output* ${READS}/trimmomatic0.39/
 
-#for f1 in *_forward_paired.fq.gz; do
-   # base=${f1%_forward_paired.fq.gz}  # Strip _R1.fastq.gz, leaving File1, File2, etc
-   # f2=${f1%_reverse_paired.fq.gz}_reverse_paired.fq.gz  # add _R2.fastq.gz to get File1_R2.fastq.gz, etc
-    ...
-#done
-#wget https://ftp.ncbi.nlm.nih.gov/genomes/genbank/bacteria/Bacillus_thuringiensis/all_assembly_versions/GCA_021651035.1_ASM2165103v1/GCA_021651035.1_ASM2165103v1_genomic.fna.gz
-#find . -name '*.fna' -exec rename 's/\.fna$/.fasta/' \{} \;
-#REF = *.fasta
-
 #fastqinfor-2.0.sh must be downloaded into the file
 #REF file to be downloaded into the folder 
 
